@@ -1,106 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./img/favicon/coffee-cup.ico" type="image/gif" sizes="16x16">
-  <link href="./output.css" type="text/css" rel="stylesheet">
-  <title>Dung dev coffee style</title>
-</head>
-<body>
-  <div class="root">
-    <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8">
-      <header class="p-6 mx-auto">
-        <nav class="flex flex-row justify-between items-center relative">
-          <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
-            CoffeeStyle.
-          </div>
-          <ul id="ct-top-menu" class="basis-3/6 hidden lg:flex lg:items-center lg:justify-end gap-8 uppercase text-sm text-gray-400 font-semibold">
-            <li class="ct-top-menu-item">
-              <a href="" class="">Home</a>
-            </li>
-            <li class="ct-top-menu-item">
-              <a href="" class="">Products</a>
-            </li>
-            <li class="ct-top-menu-item">
-              <a href="" class="">Blog</a>
-            </li>
-            <li class="ct-top-menu-item">
-              <a href="" class="">About</a>
-            </li>
-            <li class="ct-top-menu-item">
-              <a href="" class="">Contact</a>
-            </li>
-            <li class="ct-top-menu-item">
-              <a href="" class="">Style guide</a>
-            </li>
-            <li class="ct-top-menu-item ct-top-menu-item-active">
-              <a href="https://example.com" target="blank" class="">YenaDev</a>
-            </li>
-          </ul>
-          <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
-            <li class="ct-top-menu-item">
-              <a href="#" class="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="ct-icon">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                </svg>
-                <span class="mx-2">Cart</span>
-                <span class="ct-circle-badge bg-orange-200">99+</span>
-              </a>
-            </li>
-          </ul>
-          <div id="ct-toggle-top-menu-icon" class="basis-1/6 lg:hidden cursor-pointer px-3 sm:px-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <div class="slider h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom">
-          <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30">
-            <div class="mx-16 text-white text-center flex flex-col items-center"> 
-              <div class="uppercase mb-6">Best place to buy coffee</div>
-              <div class="font-medium text-5xl mb-6 ">Coffee Mugs</div>
-              <div class="text-lg mb-6">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
-              <div class="">
-                <div class="uppercase bg-white hover:bg-opacity-95 text-gray-900 w-max cursor-pointer tracking-wider font-semibold text-sm px-5 py-4"> 
-                  Explore Our Products
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./img/favicon/coffee-cup.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link href="./output.css" type="text/css" rel="stylesheet" />
+    <title>Dung dev coffee style</title>
+  </head>
+  <body>
+    <div class="root">
+      <div
+        class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8"
+      >
+        <header class="p-6 mx-auto">
+          <nav class="flex flex-row justify-between items-center relative">
+            <div
+              class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer"
+            >
+              CoffeeStyle.
+            </div>
+            <ul
+              id="ct-top-menu"
+              class="basis-3/6 hidden lg:flex lg:items-center lg:justify-end gap-8 uppercase text-sm text-gray-400 font-semibold"
+            >
+              <li class="ct-top-menu-item">
+                <a href="" class="">Home</a>
+              </li>
+              <li class="ct-top-menu-item">
+                <a href="" class="">Products</a>
+              </li>
+              <li class="ct-top-menu-item">
+                <a href="" class="">Blog</a>
+              </li>
+              <li class="ct-top-menu-item">
+                <a href="" class="">About</a>
+              </li>
+              <li class="ct-top-menu-item">
+                <a href="" class="">Contact</a>
+              </li>
+              <li class="ct-top-menu-item">
+                <a href="" class="">Style guide</a>
+              </li>
+              <li class="ct-top-menu-item ct-top-menu-item-active">
+                <a href="https://example.com" target="blank" class=""
+                  >YenaDev</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium"
+            >
+              <li class="ct-top-menu-item">
+                <a href="#" class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    class="ct-icon"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                    />
+                  </svg>
+                  <span class="mx-2">Cart</span>
+                  <span class="ct-circle-badge bg-orange-200">99+</span>
+                </a>
+              </li>
+            </ul>
+            <div
+              id="ct-toggle-top-menu-icon"
+              class="basis-1/6 lg:hidden cursor-pointer px-3 sm:px-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div
+            class="slider h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom"
+          >
+            <div
+              class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30"
+            >
+              <div
+                class="mx-16 text-white text-center flex flex-col items-center"
+              >
+                <div class="uppercase mb-6">Best place to buy coffee</div>
+                <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
+                <div class="text-lg mb-6">
+                  The most versatile furniture system ever created. Designed to
+                  fit your life, made to move and grow.
+                </div>
+                <div class="">
+                  <div
+                    class="uppercase bg-white hover:bg-opacity-95 text-gray-900 w-max cursor-pointer tracking-wider font-semibold text-sm px-5 py-4"
+                  >
+                    Explore Our Products
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!--End slider-->
+          <!--End slider-->
 
-        <div class="story">
-          story 
-        </div> <!--End story-->
+          <div class="story">
+            <div class="w-full h-full justify-center items-center">
+              <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
+                <div class="text-3xl mb-6 leading-10">
+                  Even the all-powerful Pointing has no control about the blind
+                  texts.
+                </div>
+                <div class="text-gray-500 leading-7 mb-6">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth. <br> Even the all-powerful Pointing
+                  has no control about the blind texts it is an almost
+                  unorthographic life One day however a small line of blind text
+                  by the name of Lorem Ipsum decided to leave for the far World
+                  of Grammar.
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-colors after:ease-in-out after:duration-500"
+                    >Read the full Story</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End story-->
 
-        <div class="featured-mugs">
-          featured-mugs 
-        </div> <!--End featured-mugs-->
+          <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Featured Mugs</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="featured-mugs">featured-mugs</div>
+          <!--End featured-mugs-->
 
-        <div class="more-products">
-          more-products 
-        </div> <!--End more-products-->
+          <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">More Products</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="more-products">more-products</div>
+          <!--End more-products-->
 
-        <div class="coffee-magazine">
-          coffee-magazine 
-        </div> <!--End coffee-magazine-->
+          <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Buy 2 mugs and get a coffee magazine free</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="coffee-magazine">coffee-magazine</div>
+          <!--End coffee-magazine-->
 
-        <div class="lifestyle-stories">
-          lifestyle-stories 
-        </div> <!--End lifestyle-stories-->
+          <div class="ct-subheadline">
+            <div class="ct-subheadline-deco-line"></div>
+            <div class="ct-subheadline-label">Behind the mugs, lifestyle stories</div>
+            <div class="ct-subheadline-deco-line"></div>
+          </div>
+          <div class="lifestyle-stories">lifestyle-stories</div>
+          <!--End lifestyle-stories-->
 
-        <div class="subcribe-us">
-          subcribe-us 
-        </div> <!--End subcribe-us-->
-      </main>
-      <footer>
-        footer
-      </footer>
-    </div> <!--End content-wrapper-->
-  </div> <!--End root-->
-</body>
-<script src="./main.js" type="text/javascript" async></script>
+          <div class="subcribe-us">subcribe-us</div>
+          <!--End subcribe-us-->
+        </main>
+        <footer>footer</footer>
+      </div>
+      <!--End content-wrapper-->
+    </div>
+    <!--End root-->
+  </body>
+  <script src="./main.js" type="text/javascript" async></script>
 </html>
