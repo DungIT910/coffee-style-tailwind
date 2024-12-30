@@ -24,7 +24,10 @@ module.exports = {
             opacity: 0,
             transform: "translateY(20%)",
           },
-          to: { opacity: 1, transform: "translateY(0)" },
+          to: {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
@@ -35,6 +38,9 @@ module.exports = {
         "slider-bg": 'url("./img/slider-bg.jpg")',
         "pink-ceramic": 'url("./img/pink-ceramic.jpg")',
         "golden-mug": 'url("./img/golden-mug.jpg")',
+      },
+      letterSpacing: {
+        widest: ".2em",
       },
     },
   },

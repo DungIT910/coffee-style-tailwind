@@ -33,9 +33,9 @@
 }
 
 .ct-subheadline-label {
-  @apply uppercase mx-3 tracking-widest text-gray-500 text-xs text-center;
+  @apply uppercase mx-3 tracking-widest text-gray-500 text-xs text-center font-semibold;
 }
 
 .ct-button {
-  @apply tracking-wider font-semibold text-sm px-5 py-4 cursor-pointer text-center
+  @apply tracking-widest text-xs px-[24px] py-[18px] cursor-pointer text-center uppercase font-bold;
 }
